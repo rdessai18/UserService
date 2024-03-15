@@ -1,0 +1,27 @@
+#
+
+server:
+  port: 8081
+
+logging:
+  level:
+    org.springframework.security: trace
+    org.springframework.web: info
+
+spring:
+  application:
+    name: UserService
+
+  jpa:
+    hibernate.ddl-auto: validate
+    show-sql: true
+
+  datasource:
+    url: jdbc:mysql://${MYSQL_HOST:localhost}:3306/user_service_app_db
+    username: user_service_app_db_user
+    password: mysql@18Rajat
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+
+
+
